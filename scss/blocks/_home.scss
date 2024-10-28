@@ -1,0 +1,162 @@
+.home {
+
+    padding: 142px 0px;
+
+    background: url(/images/home/background-image.png) 0 0/cover no-repeat;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__background-decor {
+        display: none;
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__content-decor {
+        position: absolute;
+        top: 100px;
+        left: -200px;
+    }
+
+    &__subtitle {
+        position: relative;
+        margin-bottom: 37px;
+        @include subtitle()
+    }
+
+    &__subtitle-decor {
+        position: absolute;
+        top: -5px;
+        right: 170px;
+    }
+
+    &__title {
+        margin-bottom: 45px;
+        @include t700()
+    }
+
+    &__title span.save {
+        font-weight: 500;
+        font-size: 58px;
+        color: #446381;
+    }
+
+    &__title span.price {
+        font-weight: 700;
+        font-size: 58px;
+        color: #446381;
+    }
+
+    &__text {
+        margin-bottom: 36px;
+        max-width: 518px;
+    }
+
+    &__image {
+        margin-right: -120px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .home {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__content {
+            text-align: center;
+        }
+
+        &__content-decor {
+            top: 700px;
+            right: 0px;
+        }
+
+        &__subtitle-decor {
+            top: -5px;
+            right: 20px;
+        }
+
+        &__title {
+            margin: 0px auto 35px auto;
+            max-width: 450px;
+        }
+
+        &__text {
+            margin: 0px auto 36px auto;
+        }
+
+        &__button {
+            margin: 0px auto 20px auto;
+        }
+
+        &__image img {
+            max-width: 100%;
+        }
+        
+        &__image {
+            margin: 0px auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        &__text {
+            max-width: 470px;
+        }
+
+        &__subtitle-decor {
+            top: -5px;
+            right: 10px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .home {
+
+        padding-bottom: 50px;
+        
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__subtitle-decor {
+            top: 20px;
+            right: 170px;
+        }
+
+        &__subtitle-decor {
+            top: 20px;
+            right: 80px;
+        }
+        
+        &__title {
+            font-size: 50px;
+            max-width: 350px;
+        }
+
+        &__title span.save {
+            font-size: 50px;
+        }
+
+        &__title span.price {
+            font-size: 50px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__image {
+            margin: 0px auto;
+        }
+    }
+}

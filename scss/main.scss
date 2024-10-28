@@ -1,0 +1,17 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,600,500,700);
+
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import './blocks/header';
+@import './blocks/home';
+@import './blocks/about';
+@import './blocks/series';
+@import './blocks/pricing';
+@import './blocks/footer';
